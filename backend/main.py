@@ -31,7 +31,6 @@ class StudentPerformanceInput(BaseModel):
 def predict_check():
     return {"status": "ok"}
 
-
 # Student performance prediction endpoint
 @app.post("/predict-student-performance")
 def predict_student_performance(input_data: StudentPerformanceInput):
